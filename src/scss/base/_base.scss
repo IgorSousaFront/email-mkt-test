@@ -1,0 +1,23 @@
+///////////////////////////////////////////////////////////////////////////////
+//   # Base styles
+//     All your general styles should be here
+///////////////////////////////////////////////////////////////////////////////
+
+/**
+ *
+ * To call a image you should follow the example :
+ *
+ * background: url('~@img/sua-foto.png');
+ *
+ */
+
+html {
+  font-size: 95%;
+  font-family: $f-body;
+  line-height: 1.1;
+
+  @include at-media(large) {
+    font-size: 112.5%;
+    line-height: 1.35;
+  }
+}

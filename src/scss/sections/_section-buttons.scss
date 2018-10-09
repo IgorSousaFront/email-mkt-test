@@ -1,0 +1,43 @@
+.section-buttons {
+  background-color: #e5e5e5;
+
+  .list-buttons {
+    font-size: 0;
+    text-align: center;
+    padding: 40px 0;
+
+    li {
+      vertical-align: top;
+      display: inline-block;
+      width: calc(100% / 3);
+      padding: 0 10px 30px;
+
+      a,
+      img {
+        display: block;
+        width: 100%;
+      }
+
+      p {
+        margin-top: 20px;
+        font-size: 14px;
+        font-weight: bold;
+        color: $c-brand;
+      }
+
+      &:nth-child(4) {
+
+        p {
+          color: #12792a;
+        }
+      }
+
+      &:last-child {
+
+        p {
+          color: #575757;
+        }
+      }
+    }
+  }
+}

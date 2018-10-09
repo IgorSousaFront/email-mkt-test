@@ -1,0 +1,47 @@
+///////////////////////////////////////////////////////////////////////////////
+// # Helpers
+///////////////////////////////////////////////////////////////////////////////
+
+// ## General use container
+///////////////////////////////////////////////////////////////////////////////
+
+.container {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 1rem;
+  position: relative;
+
+  @include at-media(small) {
+    width: 750px;
+  }
+
+  @include at-media(medium) {
+    width: 980px;
+  }
+
+  @include at-media(large) {
+    width: 1280px;
+  }
+}
+
+// ## Responsive helpers
+///////////////////////////////////////////////////////////////////////////////
+
+@media only screen and (max-width: 767px) {
+  .hidden-small {
+    display: none;
+  }
+}
+
+@include at-media(medium) {
+  .hidden-medium {
+    display: none;
+  }
+}
+
+@include at-media(large) {
+  .hidden-large {
+    display: none;
+  }
+}
