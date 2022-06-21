@@ -1,5 +1,0 @@
-{
-  "scripts": {
-    "start": "lessc css/style.less --autoprefix=\"last 2 versions, ie >= 9\" | cssmin > css/style.css"
-  }
-}
